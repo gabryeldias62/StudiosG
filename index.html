@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio's G</title>
-    <link rel="icon" href="C:\\Users\\DYQ5\\OneDrive - PETROBRAS\\Área de Trabalho\\StudiosG\\assets\\SGico.ico" type="image/x-icon">
+    <link rel="icon" href="assets/SGico.ico" type="image/x-icon"> <!-- Adicionado o favicon -->
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -66,25 +66,25 @@
             padding: 20px;
             background-color: #111;
         }
-        keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
 
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px); /* Reduzido de -20px para -10px */
-    }
-}
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px); /* Reduzido de -20px para -10px */
+            }
+        }
 
-/* Aplica uma duração de 4 segundos e suaviza o movimento */
-header img {
-    max-width: 150px;
-    animation: fadeIn 2s, bounce 4s ease-in-out infinite;
-}
+        /* Aplica uma duração de 4 segundos e suaviza o movimento */
+        header img {
+            max-width: 150px;
+            animation: fadeIn 2s, bounce 4s ease-in-out infinite;
+        }
     </style>
 </head>
 <body>
