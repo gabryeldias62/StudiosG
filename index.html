@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio's G</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+        }
+        header img {
+            max-width: 150px;
+            animation: fadeIn 2s, bounce 2s infinite;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        nav a {
+            color: #00BFFF;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #1E90FF;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        #sobre, #jogos, #contato, #demos {
+            background-color: #111;
+            margin: 20px 0;
+            padding: 40px 0;
+        }
+        .btn {
+            background-color: #00BFFF;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #1E90FF;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #111;
+        }
+        keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Reduzido de -20px para -10px */
+    }
+}
+
+/* Aplica uma duração de 4 segundos e suaviza o movimento */
+header img {
+    max-width: 150px;
+    animation: fadeIn 2s, bounce 4s ease-in-out infinite;
+}
+    </style>
+</head>
+<body>
+
+    <!-- Seção de Cabeçalho -->
+    <header>
+        <img src="logo.png" alt="Logotipo do Studio's G">
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#jogos">Jogos</a>
+            <a href="#demos">Demos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Seção Início -->
+    <section id="inicio">
+        <h1>Bem-vindo ao Studio's G</h1>
+        <p>Criando jogos 2D e 3D envolventes com paixão e inovação.</p>
+        <button class="btn">Explore Nosso Trabalho</button>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre">
+        <h2>Sobre o Studio's G</h2>
+        <p>O Studio's G é um estúdio de desenvolvimento de jogos dedicado a criar experiências 2D e 3D focadas em narrativa. Nossa missão é criar experiências cativantes que deixem uma marca duradoura nos jogadores.</p>
+    </section>
+
+    <!-- Seção Jogos -->
+    <section id="jogos">
+        <h2>Nossos Jogos</h2>
+        <p>Confira alguns dos nossos projetos mais recentes.</p>
+        <!-- Galeria de projetos de jogos pode ser adicionada aqui -->
+    </section>
+
+    <!-- Seção Demos -->
+    <section id="demos">
+        <h2>Nossas Demos</h2>
+        <p>Explore as demos jogáveis de nossos futuros lançamentos.</p>
+        <!-- Conteúdo de demos jogáveis pode ser adicionado aqui -->
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Tem perguntas ou quer colaborar? Entre em contato conosco!</p>
+        <form>
+            <input type="text" name="name" placeholder="Seu Nome" required><br>
+            <input type="email" name="email" placeholder="Seu E-mail" required><br>
+            <textarea name="message" placeholder="Sua Mensagem" rows="4" required></textarea><br>
+            <button type="submit" class="btn">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <!-- Seção de Rodapé -->
+    <footer>
+        <p>Studio's G &copy; 2024 | Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
