@@ -20,12 +20,13 @@
         }
         header img {
             max-width: 150px;
-            animation: fadeIn 2s, bounce 2s infinite;
+            animation: fadeIn 2s, bounce 4s ease-in-out infinite;
         }
         nav {
             display: flex;
             justify-content: center;
             margin: 20px 0;
+            flex-wrap: wrap;
         }
         nav a {
             color: #00BFFF;
@@ -80,10 +81,42 @@
             }
         }
 
-        /* Aplica uma duração de 4 segundos e suaviza o movimento */
-        header img {
-            max-width: 150px;
-            animation: fadeIn 2s, bounce 4s ease-in-out infinite;
+        /* Responsividade para telas menores (tablets e celulares) */
+        @media (max-width: 768px) {
+            header img {
+                max-width: 100px; /* Diminui o tamanho da logo */
+            }
+            nav a {
+                font-size: 16px; /* Diminui o tamanho do texto nos links */
+                margin: 0 10px;
+            }
+            section {
+                padding: 30px 20px; /* Reduz o padding para se ajustar melhor em telas pequenas */
+            }
+            video {
+                width: 100%;
+                height: auto;
+            }
+            .btn {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+
+        /* Responsividade para telas muito pequenas (smartphones) */
+        @media (max-width: 480px) {
+            header img {
+                max-width: 80px; /* Ajusta a logo para telas bem pequenas */
+            }
+            nav {
+                flex-direction: column; /* Coloca os links do menu em coluna */
+            }
+            nav a {
+                margin: 10px 0; /* Ajusta a margem dos links no layout em coluna */
+            }
+            section {
+                padding: 20px; /* Reduz o padding ainda mais em telas pequenas */
+            }
         }
     </style>
 </head>
